@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css">
+            body{
+                padding: 0px;
+                margin: 0px;
+            }
+            #main {
+                background:url('mdk.jpg');
+                height: 680px;
+                width: 1349px;
+            }
+            #navside{
+                padding: 0px;
+                margin: 0px;
+            }
+            .side{
+                height: 680px;
+                width: 350px;
+                background-color: transparent;
+                float: right;
+    }
+.login{
+    max-width: 340px;
+    width: 300px;
+    background: white;
+    margin-top: 200px;
+    box-shadow: 10px solid black;
+}
+.login h3{
+    padding-top: 15px;
+    text-align: center;
+    display: block;
+    height: 50px;
+    width: 300px;
+    background-color: #e74c3c;
+    color: white;
+    font-family: "arial";
+    font-size: 20px;
+}
+fieldset{
+    margin: 0;
+    border: none;
+}
+form{
+    padding: 0;
+    margin: 0;
+    padding: 1px;
+    padding-right:40px;
+}
+input[type='text'],
+input[type="email"]{
+    width: 200px;
+    height: 60px;
+    color: transparent;
+    background-color: white;
+    margin-left: 20px;
+    padding: 1px;
+    border: 1px solid white;
+    border-bottom: 1px solid #bdc3c7;
+}
+input[type="submit"]{
+    width: 100%;
+    padding: 1.4em;
+    margin-left: 20px; 
+    margin-top: 20px;
+    color: #888;
+    background-color:#00cdb1 ;
+    border:none;
+    color:#eee;
+}
+input[type="submit"]:hover{
+    opacity: 0.8;
+    border-color: #00adb1;
+}
+form p{
+    text-align: center;
+    color: #888;
+    width: 30px;
+    margin: 10px auto 0;
+    background: #f9f9f9;
+    position: relative;
+    bottom: 20px;
+}
+.border-p{
+
+}
+button{
+    background-color: #3b5998;
+    width: 100%;
+    padding: 1.4em;
+    margin-bottom: 1em;
+    color: #888; ;
+    border:none;
+    color:#eee;
+    border-bottom: 4px solid transparent;
+}
+button:hover{
+    opacity: 0.9;
+    border-color: #3b3998;
+}
+        </style>
+    </head>
+
+    <body>
+        <div id="main">
+            <div id="navside">
+                <div class="side">              
+                    <div class="login">
+                        <h3>Login</h3>
+                        <fieldset>
+                            <form action="">
+                                <input type="text" name="username" placeholder="Username">
+                                <input type="email" name="Email" placeholder="Email">
+                                <input type="submit" name="submit" value="Login">
+                                <div class="border-p"></div>
+                            </form>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
