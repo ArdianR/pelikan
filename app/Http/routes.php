@@ -31,4 +31,3 @@ Route::group(['middleware' => 'auth'], function(){
 		'hobi'=>'HobiController',
 	]);
 });
-   hhhhhh
