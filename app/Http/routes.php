@@ -11,7 +11,24 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['namespace' => 'Auth'], function(){
+	Route::controllers([
+		'auth' => 'AuthController',
+		'password' => 'PasswordController'
+	]);
+});
+
+Route::group(['middleware' => 'auth'], function(){
+	Route::get('/', function () {
+	    return view('welcome');
+	});
+
+	Route::controllers([
+		'provinsi' =>'ProvinsiController',
+		'identitas' => 'IdentitasController',
+		'kota' =>'KotaController',
+		'kecamatan' => 'KecamatanController',
+		'hobi'=>'HobiController',
+	]);
 });
    hhhhhh

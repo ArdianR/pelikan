@@ -1,45 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Laravel</title>
-
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-
-        <style>
-            html, body {
-                height: 100%;
-            }
-
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
-
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
-            </div>
-        </div>
-    </body>
-</html>
+@extends('_layout.default')
+@section('content')
+<h1>Dashboard</h1>
+<a href="{{url('/provinsi')}}">Provinsi</a>
+<a href="{{url('/kota')}}">Kota</a>
+<a href="{{url('/kecamatan')}}">Kecamatan</a>
+<a href="{{url('/hobi')}}">Hobi</a>
+<a href="{{url('/identitas')}}">Identitas</a>
+<a href="{{url('auth/logout')}}">Logout</a>
+@endsection
